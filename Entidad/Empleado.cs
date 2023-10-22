@@ -26,9 +26,9 @@ namespace Entidad
         {
             return $"{ID};{Nombre};{SalarioBase};{Estado}";
         }
-        public void RegistrarEmpleado(int id, string nombre, double salariobase, string estado)
-        {
-            Empleado nuevoEmpleado = new Empleado(id, nombre, salariobase, estado);
-        }
+        //public void RegistrarEmpleado(int id, string nombre, double salariobase, string estado)
+        //{
+        //    Empleado nuevoEmpleado = new Empleado(id, nombre, salariobase, estado);
+        //}
     }
 }

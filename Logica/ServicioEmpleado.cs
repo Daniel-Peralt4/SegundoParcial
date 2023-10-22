@@ -1,6 +1,7 @@
 ﻿using Datos;
 using Entidad;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,22 @@ namespace Logica
         public List<Empleado> ConsultarEmpleados()
         {
             return listaEmpleados;
+        }
+        public List<Empleado> ConsultarConFiltro(string filtro)
+        {
+            if (filtro == " ")
+            {
+                return listaEmpleados;
+            }
+            var listaFiltrada = new List<Empleado>();
+            foreach (var item in listaEmpleados)
+            {
+                if (item.Nombre.Contains(filtro) || item.Estado.Contains(filtro))
+                {
+                    listaFiltrada.Add(item);
+                }
+            }
+            return listaFiltrada;
         }
     }
 }

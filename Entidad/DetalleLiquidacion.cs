@@ -15,13 +15,13 @@ namespace Entidad
 
         public int IdEmpleado { get; set; }
         public string Nombre { get; set; }
-        public decimal Salario { get; set; }
+        public double Salario { get; set; }
 
-        public decimal Salud { get; set; }
-        public decimal Pension { get; set; }
-        public decimal AuxilioTransporte { get; set; }
+        public double Salud { get; set; }
+        public double Pension { get; set; }
+        public double AuxilioTransporte { get; set; }
 
-        public decimal Devengado { get; set; }
+        public double Devengado { get; set; }
 
         public DetalleLiquidacion()
         {
